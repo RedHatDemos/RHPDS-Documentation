@@ -28,3 +28,19 @@
  -o services.txt
 cat services.txt |cut -f5 -d- > guids.txt
 ----
+
+= Retiring Generic Services in RHPDS
+
+You have two options to retire services in RHPDS:
+
+. Allow them to self retire
+
+or 
+
+. Use the standard service retirement in the RHPDS CloudForms interface. 
+.. Services -> My Services
+.. Select All
+.. Lifecycle -> Retire
+
+[IMPORTANT]
+Please do not delete the services in Ravello directly.  You can power on and power off directly in Ravello if you want however.
