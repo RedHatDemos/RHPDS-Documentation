@@ -4,16 +4,20 @@
 
 . Order your services using `order_svc.sh`
 .. Flag -c is the catalog in RHPDS
-.. Flag -i is the catalog item name
+.. Flag -i is the catalog item name from the above catalog
++
+[NOTE]
+Catalog and catalog item names should be in " if there are spaces in the name.  You should specify the catalog and catalog item names exactly as they show up in the CloudForms GUI.
+
 .. Flag -u is your RHPDS _generic_ login
 +
 [IMPORTANT]
 Do not use your personal RHPDS login for this purpose or the quota will stop you.
 
-.. Flag -w is the cloudforms URL (RHPDS)
+.. Flag -w is the cloudforms URL (RHPDS in this example)
 .. Flag -t specifies the number of instances to deploy
 .. Flag -d allows you to set values that control the service deployment:
-... Setting autostart=t will start the environments immediately upon creation and autostart=f will create environments but not start them
+... Setting autostart=t will start the environments immediately upon creation and autostart=f will create environments but not start them (useful for staging a day ahead)
 ... Setting noemail=t is recommended as you do not want to send an email for every environment created (see obtaining GUIDs below)
 
 ----
