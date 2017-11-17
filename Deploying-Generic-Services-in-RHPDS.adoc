@@ -6,6 +6,10 @@
 .. Flag -c is the catalog in RHPDS
 .. Flag -i is the catalog item name
 .. Flag -u is your RHPDS _generic_ login
++
+[IMPORTANT]
+Do not use your personal RHPDS login for this purpose or the quota will stop you.
+
 .. Flag -w is the cloudforms URL (RHPDS)
 .. Flag -t specifies the number of instances to deploy
 .. Flag -d allows you to set values that control the service deployment:
@@ -17,6 +21,9 @@
  -u <generic_login> -w "https://rhpds.redhat.com" \
  -t 2 -d "autostart=t;noemail=t"
 ----
+
+[NOTE]
+More detailed documentation for order_svc and get_svcs is available in the above GIT repo.
 
 = Retrieving Lab GUIDs
 
