@@ -29,6 +29,10 @@
 cat services.txt |cut -f5 -d- > guids.txt
 ----
 
+= Working With Generic Environments
+
+Once you have your GUIDs, you can share one GUID per student/group of students.  The lab instructions should be generic where each VM in the lab has a hostname of something-_$GUID_.rhpds.opentlc.com.  The student need only replace _$GUID_ with their assigned GUID.
+
 = Retiring Generic Services in RHPDS
 
 You have two options to retire services in RHPDS:
