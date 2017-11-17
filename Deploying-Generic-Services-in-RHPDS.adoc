@@ -1,0 +1,23 @@
+= Deploying Generic Services in RHPDS
+
+. Check out the git repo at https://github.com/rut31337/order_svc
+
+. Use the command like this:
++
+----
+./order_svc.sh -c "Workshops" -i "CloudForms 4.5 Workshop" \
+ -u <generic_login> -w "https://rhpds.redhat.com" \
+ -t 2 -d "autostart=t;noemail=t"
+----
+
+[NOTE]
+The -t specifies the number of instances to deploy.  autostart=t will start the environments autostart=f will create them but not start.  The setting noemail=t is recommended as you do not want to get an email sent to you for every environment.  GUIDs are retrieved as documented below.
+
+. Get your GUIDs using this:
++
+----
+./get_svcs.sh -c "Workshops" -i "CloudForms 4.5 Workshop" \
+ -u <generic_login> -w "https://rhpds.redhat.com" \
+ -o services.txt
+cat services.txt |cut -f5 -d- > guids.txt
+----
