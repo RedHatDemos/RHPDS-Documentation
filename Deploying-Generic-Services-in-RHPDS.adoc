@@ -48,11 +48,14 @@ Once you have your GUIDs, you can share one GUID per student/group of students. 
 
 You have two options to retire services in RHPDS:
 
-. Allow them to self retire
+- Allow them to self retire
++
+[NOTE]
+If you choose this option, at least power all the services down in Ravello to save money.
 
 or 
 
-. Use the standard service retirement in the RHPDS CloudForms interface. 
+- Use the standard service retirement in the RHPDS CloudForms interface. 
 .. Services -> My Services
 .. Select All
 .. Lifecycle -> Retire
